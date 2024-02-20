@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+cd /pm-wallet && npm link &&
+cd /build && npm link pm-wallet &&
+wait;
