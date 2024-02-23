@@ -13,7 +13,7 @@ function isExtendedChainInformation(chainInformation) {
 }
 exports.MAINNET_CHAINS = {
     [exports.POLYGON_ID]: {
-        urls: ['https://rpc-mainnet.maticvigil.com', 'https://polygon-rpc.com'].filter(Boolean),
+        urls: ['https://polygon-rpc.com'].filter(Boolean),
         name: 'Polygon Mainnet',
         nativeCurrency: MATIC,
         blockExplorerUrls: ['https://polygonscan.com'],
