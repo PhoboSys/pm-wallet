@@ -14,6 +14,13 @@ export const [walletConnectV2, hooks] = initializeConnector<WalletConnectV2>(
         chains: [mainnet],
         optionalChains,
         showQrModal: true,
+        // @walletconnect/sign-client at @2.13.1 version requires metadata to be defined or infered from meta tags in html
+        metadata: {
+          name: 'Oracly',
+          description: 'Oracly',
+          url: window.location.origin,
+          icons: [''],
+        },
       },
     })
 )

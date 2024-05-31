@@ -13,6 +13,13 @@ _a = (0, core_1.initializeConnector)((actions) => new walletconnect_v2_1.WalletC
         chains: [mainnet],
         optionalChains,
         showQrModal: true,
+        // @walletconnect/sign-client at @2.13.1 version requires metadata to be defined or infered from meta tags in html
+        metadata: {
+            name: 'Oracly',
+            description: 'Oracly',
+            url: window.location.origin,
+            icons: [''],
+        },
     },
 })), exports.walletConnectV2 = _a[0], exports.hooks = _a[1];
 //# sourceMappingURL=WalletConnectV2.js.map
