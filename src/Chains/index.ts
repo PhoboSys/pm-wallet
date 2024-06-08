@@ -2,6 +2,8 @@ import type { AddEthereumChainParameter } from '@web3-react/types'
 
 export const POLYGON_ID = 137
 export const MUMBAI_ID = 80001
+export const LDE_ID = process.env.WEB3_LDE_CHAIN_ID || 31337
+export const LDE_URL = process.env.WEB3_LDE_CHAIN_URL || 'http://localhost:8545'
 
 const MATIC: AddEthereumChainParameter['nativeCurrency'] = {
   name: 'Matic',
@@ -45,9 +47,19 @@ export const TESTNET_CHAINS: ChainConfig = {
   },
 }
 
+export const LDE_CHAINS: ChainConfig = {
+  [LDE_ID]: {
+    urls: [LDE_URL],
+    name: 'Polygon LDE',
+    nativeCurrency: MATIC,
+    blockExplorerUrls: ['https://polygonscan.com'],
+  },
+}
+
 export const CHAINS: ChainConfig = {
-  ...MAINNET_CHAINS,
+  ...LDE_CHAINS,
   ...TESTNET_CHAINS,
+  ...MAINNET_CHAINS,
 }
 
 export const URLS: { [chainId: number]: string[] } = Object.keys(CHAINS).reduce<{ [chainId: number]: string[] }>(
