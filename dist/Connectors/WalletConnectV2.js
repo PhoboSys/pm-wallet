@@ -9,7 +9,7 @@ const [mainnet, ...optionalChains] = Object.keys(Chains_1.MAINNET_CHAINS).map(Nu
 _a = (0, core_1.initializeConnector)((actions) => new walletconnect_v2_1.WalletConnect({
     actions,
     options: {
-        projectId: '69fb9924a262185551f420c7dfef0cde',
+        projectId: '6bc5fc9fe0861ed78b16c5c7fabb74ee',
         chains: [mainnet],
         optionalChains,
         showQrModal: true,
