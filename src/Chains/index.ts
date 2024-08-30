@@ -31,7 +31,7 @@ type ChainConfig = { [chainId: number]: BasicChainInformation | ExtendedChainInf
 
 export const MAINNET_CHAINS: ChainConfig = {
   [POLYGON_ID]: {
-    urls: ['https://polygon-rpc.com', 'https://polygon.drpc.org', 'https://polygon.gateway.tenderly.co'].filter(Boolean),
+    urls: ['https://polygon-rpc.com'].filter(Boolean),
     name: 'Polygon Mainnet',
     nativeCurrency: MATIC,
     blockExplorerUrls: ['https://polygonscan.com'],
