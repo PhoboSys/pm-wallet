@@ -1,10 +1,10 @@
 {
   "name": "pm-wallet",
   "description": "Wallet",
-  "version": "0.0.1",
-  "author": "Phobosys",
+  "version": "1.0.0",
+  "author": "Oracly Team <team@oracly.io>",
   "private": false,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
   "engines": {
@@ -32,7 +32,7 @@
     "bin"
   ],
   "devDependencies": {
-    "@aoberoi/chokidar-cli": "^2.0.0",
+    "@aoberoi/chokidar-cli": "2.0.0",
     "@types/amqplib": "0.8.2",
     "@types/node": "^18.11.18",
     "@types/jest": "^27.4.1",
