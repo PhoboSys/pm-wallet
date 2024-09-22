@@ -1,5 +1,5 @@
 {
-  "name": "pm-wallet",
+  "name": "@oracly/pm-wallet",
   "description": "Wallet",
   "version": "1.0.0",
   "author": "Oracly Team <team@oracly.io>",
